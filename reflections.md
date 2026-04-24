@@ -1,0 +1,9 @@
+# Reflection
+
+For this project, I approached the Task Manager as if Pythonik-net was actually building a lightweight deployment tool for TaskFlow Solutions. I wanted it to feel real, not like a basic class assignment. One of my main goals was to integrate my personal workflow style and structure while still staying within the requirements of the project. Finding that balance took some effort, but it made the project more meaningful.
+
+A major challenge throughout this project was completing everything on my tablet. I am intentionally pushing myself to become a power tablet user, so I avoided switching to a traditional laptop even when it would have been easier. That decision introduced obstacles, especially when debugging JavaScript without full DevTools support and managing files through Termux. There were times where simple issues, such as file paths or rendering bugs, took longer to resolve because of the environment. However, working through those challenges helped me better understand how the DOM, file structure, and execution flow all connect.
+
+I also made a strong effort to treat this like a real development project. I used branches, committed frequently, and isolated features so I would not break working code. This improved my GitHub workflow and reinforced the importance of clean project management.
+
+Overall, this project pushed me both technically and mentally. I enjoyed building something that reflects my Pythonik-net system while still meeting academic expectations. More importantly, it helped me grow in frontend development and disciplined workflow habits, which I plan to continue refining in future projects.

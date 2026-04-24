@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythonik-net TaskFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+
+    <div class="brand">
+
+        <img src="assets/logo.png" alt="Pythonik-net" class="logo">
+
+        <div class="brand-text">
+            <h1>Pythonik-net Task Tracker</h1>
+            <p>TaskFlow Deployment Interface</p>
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+      
+<div class="form-group">
+    <label for="presetTask">Select Operation</label>
+    <select id="presetTask">
+        <option value="">-- Choose Pythonik-net Task --</option>
+        <option value="Run Nmap scan on serving-py">Nmap Scan</option>
+        <option value="Deploy MQTT listener on es-py">Deploy MQTT</option>
+        <option value="Capture PCAP via hackdroid">Capture PCAP</option>
+        <option value="Audit leaky-bucket MinIO">Audit MinIO</option>
+    </select>
+</div>
+
+        <!-- INPUT PANEL -->
+        <section id="input-panel">
+
+            <h2>New Task</h2>
+
+            <div class="form-group">
+                <label for="taskName">Operation Name</label>
+                <input 
+                    type="text" 
+                    id="taskName" 
+                    placeholder="e.g. Run Nmap scan on serving-py"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="">-- Select Priority --</option>
+                    <option value="Low">Low (Routine)</option>
+                    <option value="Medium">Medium (Standard)</option>
+                    <option value="High">High (Critical)</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="important">
+                    Critical Task
+                </label>
+
+                <label>
+                    <input type="checkbox" id="completed">
+                    Already Executed
+                </label>
+            </div>
+
+            <button id="addTaskBtn">Deploy Task</button>
+
+        </section>
+
+        <!-- TASK OUTPUT PANEL -->
+        <section id="output-panel">
+
+            <h2>Active Tasks</h2>
+
+            <!-- RUBRIC REQUIREMENTS -->
+            <div id="taskmanager"></div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
